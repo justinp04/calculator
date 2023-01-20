@@ -29,7 +29,7 @@ public class calculator
 
             switch(selection)
             {
-                case 1:
+                case 1: //Addition
                     System.out.println("Number one:");
                     numOne = input.nextDouble();
                     input.nextLine();
@@ -41,7 +41,17 @@ public class calculator
 
                     System.out.println(sum);
                 break;
-                case 2:
+                case 2: //Subtraction
+                    System.out.println("Number one:");
+                    numOne = input.nextDouble();
+                    input.nextLine();
+                    System.out.println("Number Two: ");
+                    numTwo = input.nextDouble();
+                    input.nextLine();
+
+                    double finalNum = subtract(numOne, numTwo);
+
+                    System.out.println(finalNum);
                 break;
                 case 3:
                 break;
@@ -60,7 +70,7 @@ public class calculator
         return sum;
     }
 
-    private static double subtract(int numOne, int numTwo)
+    private static double subtract(double numOne, double numTwo)
     {
         double sum = numOne - numTwo;
         return sum;
