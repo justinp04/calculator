@@ -53,7 +53,17 @@ public class calculator
 
                     System.out.println(finalNum);
                 break;
-                case 3:
+                case 3: //multiplicaiton
+                    System.out.println("Number one:");
+                    numOne = input.nextDouble();
+                    input.nextLine();
+                    System.out.println("Number Two: ");
+                    numTwo = input.nextDouble();
+                    input.nextLine();
+
+                    double product = multiply(numOne, numTwo);
+
+                    System.out.println("The product of your two numbers is: " + product);
                 break;
                 case 4:
                 break;
@@ -74,5 +84,11 @@ public class calculator
     {
         double sum = numOne - numTwo;
         return sum;
+    }
+
+    private static double multiply(double numOne, double numTwo)
+    {
+        double product = numOne*numTwo;
+        return product;
     }
 }
