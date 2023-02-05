@@ -77,6 +77,7 @@ public class calculator
 
                     double divFinal = divide(numerator, denominator);
 
+                    System.out.println("The final number is: " + divFinal);
                 break;
                 case 5:
                     loop = true;
