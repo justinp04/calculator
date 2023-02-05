@@ -18,7 +18,7 @@ public class calculator
         while(!loop)
         {
             //Menu including 
-            System.out.println("Calculator without GUI:");
+            System.out.println("\nCalculator without GUI:");
             System.out.println("Selecton from the following: ");
             System.out.println("1. Addition");
             System.out.println("2. Subtraction");
